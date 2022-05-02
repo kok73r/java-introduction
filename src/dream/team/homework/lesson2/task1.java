@@ -3,19 +3,15 @@ package dream.team.homework.lesson2;
 public class task1 {
     //task1
     public static void main(String[] args) {
-        int a = 10;
+        int a = 20;
         System.out.println("a = " + a);
-        int b = 20;
+        int b = 5;
         System.out.println("b = " + b);
 
         System.out.println();
+        System.out.println("a= " + b);
+        System.out.println("b= " + a);
 
-        int c = b;
-        System.out.println("a = " + c);
-        int d = a;
-        System.out.println("b = " + d);
-
-        //task2
 
 
     }

@@ -8,7 +8,7 @@ public class JavaMath {
 
         System.out.println(Math.sqrt(Math.PI));
         System.out.println(Math.sqrt(9));
-        System.out.println(Math.pow(2, 16));
+        System.out.println(Math.pow(2, 4));
 
         float f1 = 45.87f;
         System.out.println(Math.round(f1));

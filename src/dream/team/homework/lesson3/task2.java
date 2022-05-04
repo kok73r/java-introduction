@@ -16,8 +16,8 @@ public class task2 {
         System.out.println();
 
         double result = (Math.abs(a - b)) / Math.pow((a + b), 3) - Math.sqrt(c);
-        for (String s : Arrays.asList("Mathematical formula = |a - b|/(a + b)^3 + sqrt/c", "Formula solution = " + result)) {
-            System.out.println(s);
-        }
+
+
+        System.out.println("Mathematical formula = |a - b|/(a + b)^3 + √c = " + result);
     }
 }

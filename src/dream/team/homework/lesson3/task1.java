@@ -22,7 +22,7 @@ public class task1 {
         float volumeBody = (float) (4 / 3 * Math.PI * Math.pow(rBody, 3));
         float volumeLegs = (float) (4 / 3 * Math.PI * Math.pow(rLegs, 3));
 
-        float weihgt = density * volumeHead + density * volumeBody + density * volumeLegs;
+        float weihgt = density * (volumeHead + volumeBody + volumeLegs);
         System.out.println();
         System.out.println("SnowMan weight = " + weihgt);
 

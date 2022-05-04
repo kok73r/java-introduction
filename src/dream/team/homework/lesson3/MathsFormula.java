@@ -1,8 +1,6 @@
 package dream.team.homework.lesson3;
 
-import java.util.Arrays;
-
-public class task2 {
+public class MathsFormula {
 
     public static void main(String[] args) {
 
@@ -18,6 +16,6 @@ public class task2 {
         double result = (Math.abs(a - b)) / Math.pow((a + b), 3) - Math.sqrt(c);
 
 
-        System.out.println("Mathematical formula = |a - b|/(a + b)^3 + √c = " + result);
+        System.out.println("Mathematical formula |a - b|/(a + b)^3 + √c = " + result);
     }
 }

@@ -1,6 +1,6 @@
 package dream.team.classwork.lesson4;
 
-public class methods {
+public class Practice {
     public static void main(String[] args) {
 
         hello();

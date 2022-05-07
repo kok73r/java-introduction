@@ -11,10 +11,10 @@ public class Task2 {
         int days = 30;
 
         int eatInDay = resultEatInDay(portionOfFood,amountOfFeeding);
-        int coastShelterInMonth = moneyForTheShelter((eatDogsInMonth(dogs,eatInDay,days)),eatCatsInMonth(cats,eatInDay,days), coastOfFood);
+        int coastShelterInMonth = moneyForTheShelter((eatAnimalssInMonth(dogs,eatInDay,days)),eatAnimalssInMonth(cats,eatInDay,days), coastOfFood);
 
-        System.out.println("EatDogsInMonth " + eatDogsInMonth(dogs, eatInDay, days));
-        System.out.println("EatCatsInMonth " + eatCatsInMonth(cats, eatInDay, days));
+        System.out.println("EatDogsInMonth " + eatAnimalssInMonth(dogs, eatInDay, days));
+        System.out.println("EatCatsInMonth " + eatAnimalssInMonth(cats, eatInDay, days));
         System.out.println("Coast shelter in month = " + coastShelterInMonth);
 
 
@@ -24,13 +24,9 @@ public class Task2 {
         return portionOfFood * amountOfFeeding;
 
     }
-    public static int eatDogsInMonth(int dogs, int eatInDay, int days){
-        int eatDogsInMonth = dogs * eatInDay * days;
-        return eatDogsInMonth;
-    }
-    public static int eatCatsInMonth(int cats, int eatInDay, int days){
-        int eatCatsInMonth = cats * eatInDay * days;
-        return eatCatsInMonth;
+      public static int eatAnimalssInMonth(int animals, int eatInDay, int days){
+        int eatAnimalssInMonth = animals * eatInDay * days;
+        return eatAnimalssInMonth;
     }
 
     public static int moneyForTheShelter (int eatDogsInMonth, int eatCatsInMonth, int coastOfFood){

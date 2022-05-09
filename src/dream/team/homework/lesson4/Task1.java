@@ -5,7 +5,7 @@ public class Task1 {
 
         printAirplaneInfo("Jet", "F-22 Raptor");
         printAirplaneInfo("Airliner", "Aerobus 737", "120");
-        printAirplaneInfo("Airliner", "Boeing 777", "180" , "28");
+        printAirplaneInfo("Airliner", "Boeing 777", "180", "28");
 
 
     }
@@ -20,8 +20,10 @@ public class Task1 {
 
     }
 
-    public static void printAirplaneInfo(String name, String type, String numberOfEconomClassSeats, String numberOfbusinessClassSeats) {
-        System.out.println("Type of aircraft: " + name + ", Model: " + type + ", number of economy class seats " + numberOfEconomClassSeats + ", number of business class seats " + numberOfbusinessClassSeats);
+    public static void printAirplaneInfo(String name, String type, String numberOfEconomClassSeats,
+                                         String numberOfbusinessClassSeats) {
+        System.out.println("Type of aircraft: " + name + ", Model: " + type + ", number of economy class seats "
+                + numberOfEconomClassSeats + ", number of business class seats " + numberOfbusinessClassSeats);
 
     }
 

@@ -15,30 +15,16 @@ public class Suitcase {
         int width = Integer.parseInt(reader.readLine());
         int height = Integer.parseInt(reader.readLine());
 
-        /*int volume = calculateVolume(length, width, height);
-        System.out.println("Volume bag or suitcase = " + volume);
-*/
-        if (length > 55 && width > 20 && height > 40) {
-            System.out.println("Your suitcase does not fit");
-        }else if(length <= 55 && width <= 20 && height <= 40){
-            System.out.println("Your suitcase is the right size");
-        }/*else {
-            System.out.println("Wrong value.");
-        }*/
 
-        if (length > 40 && width > 22 && height > 53) {
-            System.out.println("Your suitcase does not fit");
-        }else if(length <= 40 && width <= 22 && height <= 53){
+        if (length <= 40 && width <= 22 && height <= 53) {
             System.out.println("Your suitcase is the right size");
-        }else {
-            System.out.println("Your suitcase does not fit");
+        } else if (length <= 55 && width <= 20 && height <= 40) {
+            System.out.println("Your suitcase is the right size");
+        } else {
+            System.out.println("Your suitcase does not right size.");
         }
 
-        }
 
     }
 
-   /* public static int calculateVolume(int length, int width, int heiht) {
-        return (length * width * heiht);
-    }*/
-
+}

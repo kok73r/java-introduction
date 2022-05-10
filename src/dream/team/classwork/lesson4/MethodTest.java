@@ -13,9 +13,9 @@ public class MethodTest {
         int result2 = sum(result, 10);
         System.out.println(result2);
 
-        int evenNumber = 18;
+        int evenNumber = 17;
         boolean even = isEven(evenNumber);
-        System.out.println("even" + even);
+        System.out.println("even " + even);
 
         double bigger = 100;
         double smaller = 5;

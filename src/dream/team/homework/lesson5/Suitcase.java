@@ -16,15 +16,18 @@ public class Suitcase {
         int height = Integer.parseInt(reader.readLine());
 
 
-        if (length <= 40 && width <= 22 && height <= 53) {
-            System.out.println("Your suitcase is the right size");
-        } else if (length <= 55 && width <= 20 && height <= 40) {
-            System.out.println("Your suitcase is the right size");
+        String answerForSuitcase = sizeSuitcaseCorrect(length, width, height) ?
+                "Your suitcase is the right size" : "Your suitcase does not right size!";
+        System.out.println(answerForSuitcase);
+
+    }
+
+    public static boolean sizeSuitcaseCorrect(int length, int width, int height) {
+        if ((length <= 40 && width <= 22 && height <= 53) || (length <= 55 && width <= 20 && height <= 40)) {
+            return true;
         } else {
-            System.out.println("Your suitcase does not right size.");
+            return false;
         }
-
-
     }
 
 }

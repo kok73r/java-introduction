@@ -6,15 +6,14 @@ public class Snowman {
 
         //Snowman parameters
         float rHead = 1f;
-        System.out.println("Radius of the first ball = " + rHead);
+        System.out.println("Radius of the head = " + rHead);
 
         float rBody = 0.5f;
-        System.out.println("Radius of the second ball = " + rBody);
+        System.out.println("Radius of the body = " + rBody);
 
         float rLegs = 0.2f;
-        System.out.println("Radius of the third ball = " + rLegs);
+        System.out.println("Radius of the legs = " + rLegs);
 
-        // "p"
         float density = 0.7f;
         System.out.println("Ball Density = - " + density);
 
@@ -25,10 +24,6 @@ public class Snowman {
         float weihgt = density * (volumeHead + volumeBody + volumeLegs);
         System.out.println();
         System.out.println("SnowMan weight = " + weihgt);
-
-
-
-
 
 
     }

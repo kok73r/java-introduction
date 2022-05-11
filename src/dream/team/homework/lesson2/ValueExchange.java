@@ -1,6 +1,6 @@
 package dream.team.homework.lesson2;
 
-public class task1 {
+public class ValueExchange {
     //task1
     public static void main(String[] args) {
         int a = 3;

@@ -1,6 +1,6 @@
 package dream.team.homework.lesson3;
 
-public class task1 {
+public class Snowman {
 
     public static void main(String[] args) {
 

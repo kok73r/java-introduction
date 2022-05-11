@@ -1,6 +1,6 @@
 package dream.team.homework.lesson4;
 
-public class Task1 {
+public class Airplane {
     public static void main(String[] args) {
 
         printAirplaneInfo("Jet", "F-22 Raptor");

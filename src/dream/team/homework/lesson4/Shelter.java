@@ -1,6 +1,6 @@
 package dream.team.homework.lesson4;
 
-public class Task2 {
+public class Shelter {
     public static void main(String[] args) {
 
         int dogs = 24;

@@ -4,7 +4,7 @@ public class Snowman {
 
     public static void main(String[] args) {
 
-        //Snowman parameters
+
         float rHead = 1f;
         System.out.println("Radius of the head = " + rHead);
 

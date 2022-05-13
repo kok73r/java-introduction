@@ -12,7 +12,11 @@ public class Calculating {
         int number1 = Integer.parseInt(reader.readLine());
         char operation = in.readLine().charAt(0);
         int number2 = Integer.parseInt(reader.readLine());
+        if(number2==0){
+            System.out.println("We can`t divide for 0");
+        }
         int answer = calculating(number1, number2, operation);
+
 
         System.out.println("Your answer = " + answer);
 

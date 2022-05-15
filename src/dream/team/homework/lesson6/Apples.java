@@ -27,15 +27,15 @@ public class Apples {
 
     public static int countMediumJars(int applesWeHarwest, int applesInBigJar,
                                       int applesInMediumJar) {
-       int remainderApples = applesWeHarwest % applesInBigJar;
-        return remainderApples/applesInMediumJar;
+        int remainderApples = applesWeHarwest % applesInBigJar;
+        return remainderApples / applesInMediumJar;
     }
 
     public static int countSmallJars(int applesWeHarwest, int applesInBigJar,
                                      int applesInMediumJar, int applesInSmallJar) {
-        int remainderApples =applesWeHarwest % applesInBigJar;
-        int remainderApplesSmall = remainderApples%applesInMediumJar;
-        return remainderApplesSmall/applesInSmallJar;
+        int remainderApples = applesWeHarwest % applesInBigJar;
+        int remainderApplesSmall = remainderApples % applesInMediumJar;
+        return remainderApplesSmall / applesInSmallJar;
     }
 
 }

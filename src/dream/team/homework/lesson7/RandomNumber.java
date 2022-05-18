@@ -11,7 +11,6 @@ public class RandomNumber {
         int min = 0;
         int max = 10;
         int randomNumber = (int) (min + Math.random() * max);
-        System.out.println(randomNumber);
         System.out.println("Enter number from 0 to 10: ");
 
         int enteredNumber = Integer.parseInt(reader.readLine());

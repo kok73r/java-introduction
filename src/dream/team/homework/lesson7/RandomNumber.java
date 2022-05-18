@@ -16,6 +16,7 @@ public class RandomNumber {
         int enteredNumber = Integer.parseInt(reader.readLine());
         while (enteredNumber != randomNumber) {
             System.out.println("Your entered number " + enteredNumber + " wrong ");
+            System.out.println("Try another number: ");
             enteredNumber = Integer.parseInt(reader.readLine());
         }
         System.out.println("Congratulation you win!");

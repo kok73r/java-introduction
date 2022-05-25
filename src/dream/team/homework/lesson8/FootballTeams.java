@@ -8,7 +8,7 @@ public class FootballTeams {
     public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Enter count of team memmbers: ");
+        System.out.println("Enter count of team members: ");
         int teamAmount = Integer.parseInt(reader.readLine());
 
         int[] footballPlayersAgeFirstTeam = new int[teamAmount];
@@ -48,7 +48,7 @@ public class FootballTeams {
     public static void fillAndPrintArray(int[] footballPlayersAge) {
         for (int i = 0; i < footballPlayersAge.length; i++) {
             footballPlayersAge[i] = ageOfPlayers();
-            System.out.println(" Football player age: " + ageOfPlayers() + ",");
+            System.out.println(" Football player age: " + footballPlayersAge[i] + ",");
         }
     }
 

@@ -10,32 +10,32 @@ public class Palindrome {
 
     public static void main(String[] args) throws IOException {
 
-        int size = 3;
-
+        int size = 4;
         String[] array = new String[size];
         fillArray(array);
         System.out.println(Arrays.toString(array));
-        checkReverseArray(array);
-
+        System.out.println(checkReverseArray(array));
     }
+//Винести в метод перевертання масиву.
+// Користувач вводив цілістну строку і розбити на масив. Все привести в 1 регістр і видалити пробіли
 
     public static boolean checkReverseArray(String[] array) throws IOException {
-        int[] numbers = new int[Integer.parseInt(reader.readLine())];
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Integer.parseInt(reader.readLine());
-            System.out.println(numbers[i]);
+        String[] arraysRevers = new String[array.length];
+        for (int i = arraysRevers.length - 1; i >= 0; i--) {
+            arraysRevers[arraysRevers.length - 1 - i] = array[i];
+
         }
-        int[]numbersRevers = new int[numbers[Integer.parseInt(reader.readLine())]];
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.println(numbersRevers[i]);
+        System.out.println(Arrays.toString(arraysRevers));
+        for (int i = 0; i < array.length; i++) {
+            if (!array[i].equals(arraysRevers[i])) {
+                return false;
+            }
         }
-        if (numbers!=numbersRevers)
-            System.out.println("Your array palindrome");
-        else System.out.println("Your array palindrome");
         return true;
     }
+
     public static void fillArray(String[] array) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader((System.in)));
+
         for (int i = 0; i < array.length; i++) {
             array[i] = reader.readLine();
 

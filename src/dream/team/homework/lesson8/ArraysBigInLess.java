@@ -15,19 +15,19 @@ public class ArraysBigInLess {
         printArray(arrayBy20Lines);
 
         System.out.println("Insert size of array: ");
-        String[] firstArray10Lines = createArray(Integer.parseInt(READER.readLine()));
+        String[] firstSmallArray = createArray(Integer.parseInt(READER.readLine()));
         for (int i = 0; i < arrayBy20Lines.length / 2; i++) {
-            firstArray10Lines[i] = arrayBy20Lines[i];
+            firstSmallArray[i] = arrayBy20Lines[i];
         }
         System.out.println("First small array: ");
-        printArray(firstArray10Lines);
+        printArray(firstSmallArray);
         System.out.println("Insert size of array: ");
-        String[] secondArray10Lines = createArray(Integer.parseInt(READER.readLine()));
-        for (int i = 0; i < secondArray10Lines.length; i++) {
-            secondArray10Lines[i] = arrayBy20Lines[i + 10];
+        String[] secondSmallArray = createArray(Integer.parseInt(READER.readLine()));
+        for (int i = 0; i < secondSmallArray.length; i++) {
+            secondSmallArray[i] = arrayBy20Lines[i + 10];
         }
         System.out.println("Second small array:");
-        printArray(secondArray10Lines);
+        printArray(secondSmallArray);
     }
 
     public static void printArray(String[] strings) {
@@ -43,7 +43,7 @@ public class ArraysBigInLess {
         }
     }
 
-    public static String[] createArray(int size) throws IOException {
+    public static String[] createArray(int size) {
         String[] strings = new String[size];
         return strings;
     }

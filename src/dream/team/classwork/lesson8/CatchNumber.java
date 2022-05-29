@@ -7,7 +7,7 @@ public class CatchNumber {
                 Наприклад, ми маємо pin = 9407, за скільки ітерацій програма підбере код.
 
                 Цикли, масиви, іфи і тд.*/
-        int number = 9999;
+        int number = 2845;
         int units = number % 10;
         System.out.println(units);
         int dozens = (number / 10) % 10;
@@ -23,7 +23,6 @@ public class CatchNumber {
             for (int j = 0; j <= 9; j++) {
                 counter++;
                 if (numbers[i] == j) {
-
                     System.out.println("your number: " + j);
                     break;
                 }

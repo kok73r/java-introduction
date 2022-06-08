@@ -18,8 +18,7 @@ public class FindNegativeNumbers {
     public static int getNumber() {
         int minNumber = -50;
         int maxNumber = 50;
-        int randomNumber = (int) (Math.random() * (maxNumber - minNumber) + minNumber);
-        return randomNumber;
+        return (int) (Math.random() * (maxNumber - minNumber) + minNumber);
     }
 
     public static void printMultiArray(int[][] arr) {

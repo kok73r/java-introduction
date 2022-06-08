@@ -1,3 +1,4 @@
+/*
 package dream.team.homework.lesson6;
 
 import java.io.BufferedReader;
@@ -32,4 +33,4 @@ public class Calculating {
         }
         return result;
     }
-}
+}*/

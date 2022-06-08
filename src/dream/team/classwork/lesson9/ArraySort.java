@@ -19,8 +19,8 @@ public class ArraySort {
 
         long end = System.currentTimeMillis();
         System.out.println("Time: " + (end-start));
-        /*System.out.println(Arrays.toString(numbers));
-*/
+        //System.out.println(Arrays.toString(numbers));
+
     }
 
     public static void fill(int[] numbers) {

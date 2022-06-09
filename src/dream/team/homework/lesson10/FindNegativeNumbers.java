@@ -1,18 +1,28 @@
 package dream.team.homework.lesson10;
 
-public class FindNegativeNumbers {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-    public static void main(String[] args) {
-        int rows = 3;
-        int colums = 4;
+public class FindNegativeNumbers {
+    public static BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws IOException {
+        System.out.println("Enter array size: rows and colums");
+        int rows = Integer.parseInt(READER.readLine());
+        int colums = Integer.parseInt(READER.readLine());
+        int[][] array = createAndFillArray(rows, colums);
+        printMultiArray(array);
+        findingNegativeNumbersIndex(array);
+    }
+
+    private static int[][] createAndFillArray(int rows, int colums) {
         int[][] array = new int[rows][colums];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = getNumber();
             }
         }
-        printMultiArray(array);
-        findingNegativeNumbersIndex(array);
+        return array;
     }
 
     public static int getNumber() {

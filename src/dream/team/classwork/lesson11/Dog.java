@@ -1,0 +1,48 @@
+package dream.team.classwork.lesson11;
+
+public class Dog {
+
+    String breed;
+    String size;
+    int age;
+    String color;
+
+    public Dog() {
+        System.out.println("Dog has beeb created!");
+    }
+
+    public Dog(String breed, String size, int age, String color) {
+        this.breed = breed;
+        this.size = size;
+        this.age = age;
+        this.color = color;
+    }
+
+    public void run() {
+        System.out.println("dog runs");
+
+    }
+
+    public boolean equals(Object obj) {
+
+        if (obj instanceof Dog) {
+            Dog dog = (Dog) obj;
+            if (this.size.equals(dog.size) && this.age == dog.age) {
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
+    @Override
+    public String  toString() {
+        return "Dog{" +
+                "breed='" + this.breed + '\'' +
+                ", size='" + this.size + '\'' +
+                ", age=" + this.age +
+                ", color='" + this.color + '\'' +
+                '}';
+    }
+}

@@ -1,12 +1,12 @@
 package dream.team.homework.lesson12;
 
-public class Family {
+public class FamilyMember {
 
     private final String name;
-    Family mother;
-    Family father;
+    FamilyMember mother;
+    FamilyMember father;
 
-    public Family(String name, Family mother, Family father) {
+    public FamilyMember(String name, FamilyMember mother, FamilyMember father) {
 
         this.name = name;
         this.mother = mother;

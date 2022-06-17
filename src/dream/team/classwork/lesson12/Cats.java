@@ -19,7 +19,7 @@ public class Cats {
         if (obj instanceof Cats) {
             Cats cat = (Cats) obj;
             if (age < cat.age && weight < cat.weight && strength< cat.strength) {
-                System.out.println("Cat " + cat + " is lose");
+                System.out.println("Cat is lose");
                 return true;
 
             }

@@ -13,8 +13,6 @@ public class FamilyMain {
 
         Family son = new Family("Jon", mother, father);
 
-
-
         System.out.println(mother);
         System.out.println(father);
         System.out.println(son);

@@ -16,7 +16,6 @@ public class Persona {
         this.height = height;
 
     }
-
     @Override
     public String toString() {
         return "Persona " +

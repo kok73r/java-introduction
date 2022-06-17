@@ -2,7 +2,7 @@ package dream.team.homework.lesson12;
 
 public class Family {
 
-    private String name;
+    private final String name;
     Family mother;
     Family father;
 
@@ -17,7 +17,7 @@ public class Family {
     public String toString() {
         return
                 " name = '" + name + '\'' +
-                ", mother = " + mother +
-                ", father = " + father;
+                        ", mother = " + mother +
+                        ", father = " + father;
     }
 }

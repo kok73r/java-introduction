@@ -5,7 +5,6 @@ public class PersonaCreator {
     static String[] NAMES = {"Jack", "Ivan", "Anton", "Helen", "Jane"};
     static String[] SURNAMES = {"Ovdienko", "Danilko", "Rybalko", "Oleshko", "Funfun"};
 
-
     public static void main(String[] args) {
         int size = 100;
         Persona[] persons = createAndFillPersons(size);

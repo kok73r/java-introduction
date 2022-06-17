@@ -1,4 +1,4 @@
-package dream.team.homework.homework11;
+package dream.team.homework.lesson11;
 
 public class CatComparison {
     public static void main(String[] args) {

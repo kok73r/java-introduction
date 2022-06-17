@@ -8,7 +8,7 @@ public class Dog {
     String color;
 
     public Dog() {
-        System.out.println("Dog has beeb created!");
+        System.out.println("Dog has been created!");
     }
 
     public Dog(String breed, String size, int age, String color) {

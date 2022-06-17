@@ -1,4 +1,4 @@
-package dream.team.homework.homework11;
+package dream.team.homework.lesson11;
 
 import java.io.IOException;
 import java.util.Arrays;

@@ -6,14 +6,16 @@ import java.util.List;
 public class RealtyMain {
     public static void main(String[] args) {
 
+        int subsidies = 15;
+        int revenue = 90;
         int taxK = 30;
-        int totalFlatArea = 20;
+        int totalFlatArea = 49;
         int totalShopArea = 150;
         int totalFactoryArea = 300;
 
 
-        Realty resident = new ResidentialRealEstate(totalFlatArea, taxK, 5);
-        Realty shop = new CommercialRealEstate(totalShopArea, taxK, 150);
+        Realty resident = new ResidentialRealEstate(totalFlatArea, taxK, subsidies);
+        Realty shop = new CommercialRealEstate(totalShopArea, taxK, revenue);
         Realty factory = new IndustrialRealEstate(totalFactoryArea, taxK);
 
         System.out.println(shop.calculateTax());
@@ -25,15 +27,15 @@ public class RealtyMain {
         realEstateObjects.add(shop);
         realEstateObjects.add(factory);
 
-       /* System.out.println(checkObjects(realEstateObjects));*/
+        showObjects(realEstateObjects);
     }
 
-   /* public static Realty checkObjects(List<Realty> realEstateObjects) {
-         for (Realty realty:realEstateObjects) {
-            realty.calculateTax();
-             return realty;
-        }
+    public static Realty showObjects(List<Realty> realEstateObjects) {
+        for (Realty realty : realEstateObjects) {
+            System.out.println(realEstateObjects);
+            return realty;
 
+        }
         return null;
-    }*/
+    }
 }

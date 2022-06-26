@@ -19,7 +19,7 @@ public class CoffeeMachineMain {
 
     public static ArrayList<Drink> orderDrink() throws IOException {
         ArrayList<Drink> drinks = new ArrayList<>();
-        System.out.println("Enter Buy to confirm your order");
+        System.out.println("Enter Buy to make your order");
         while (READER.readLine().equals("Buy")) {
             System.out.println("Choose drink: ");
             System.out.println("Americano");

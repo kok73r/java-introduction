@@ -3,8 +3,7 @@ package dream.team.homework.lesson13.coffeemachine;
 public class Cappuccino extends Drink {
 
     protected Cappuccino() {
-        super(25, "cappuccino");
-
+        super(25, "Cappuccino");
     }
 
     public void cooking() {
@@ -15,7 +14,7 @@ public class Cappuccino extends Drink {
 
     @Override
     public String toString() {
-        return "Cappuccino{ '" + drinkType + '\'' +
+        return "Cappuccino{ '" + drinkName + '\'' +
                 ", price=" + price +
                 '}';
     }

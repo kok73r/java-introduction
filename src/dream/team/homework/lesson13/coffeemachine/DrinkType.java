@@ -5,6 +5,6 @@ public enum DrinkType {
     AMERICANO,
     LATTE,
     CAPPUCCINO,
-    TEA_BLACK,
-    TEA_GREEN
+    BLACK_TEA,
+    GREEN_TEA
 }

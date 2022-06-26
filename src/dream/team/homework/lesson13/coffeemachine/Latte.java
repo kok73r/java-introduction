@@ -3,8 +3,7 @@ package dream.team.homework.lesson13.coffeemachine;
 public class Latte extends Drink {
 
     protected Latte() {
-        super(30, "latte");
-
+        super(30, "Latte");
     }
 
     public void cooking() {
@@ -15,7 +14,7 @@ public class Latte extends Drink {
 
     @Override
     public String toString() {
-        return "Latte{ '" + drinkType + '\'' +
+        return "Latte{ '" + drinkName + '\'' +
                 ", price=" + price +
                 '}';
     }

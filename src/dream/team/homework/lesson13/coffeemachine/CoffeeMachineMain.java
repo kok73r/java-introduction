@@ -21,10 +21,10 @@ public class CoffeeMachineMain {
         ArrayList<Drink> drinks = new ArrayList<>();
         System.out.println("For finish the order input [Finish], to add drink [Continue or anything else]");
         while (!(READER.readLine().equalsIgnoreCase("finish"))) {
-            System.out.println("Choose drink: \n1)AMERICANO, \n2)ESPRESSO, \n3)CAPPUCCINO, \n4)LATTE, \n5)TEA_BLACK, \n6)TEA_GREEN");
+            System.out.println("Choose drink: \n1)AMERICANO, \n2)ESPRESSO, \n3)CAPPUCCINO, \n4)LATTE, \n5)BLACK_TEA, \n6)GREEN_TEA");
             DrinkType type = inputType();
             drinks.add(createDrink(type));
-            System.out.println("For exit input [finish], else anything");
+            System.out.println("For finish the order input [Finish], to add drink [Continue or anything else]");
         }
         return drinks;
     }
@@ -35,8 +35,8 @@ public class CoffeeMachineMain {
             case ESPRESSO -> new Espresso();
             case CAPPUCCINO -> new Cappuccino();
             case LATTE -> new Latte();
-            case TEA_BLACK -> new Tea("BlackTea");
-            case TEA_GREEN -> new Tea("GreenTea");
+            case BLACK_TEA -> new Tea("Black Tea");
+            case GREEN_TEA -> new Tea("Green Tea");
         };
         return drink;
     }

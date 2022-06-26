@@ -2,10 +2,11 @@ package dream.team.homework.lesson13.coffeemachine;
 
 public class Tea extends Drink {
 
-    protected Tea(String type) {
-        super(15, type);
 
 
+    protected Tea(String drinkName) {
+
+        super(15, drinkName);
     }
 
     public void cooking() {
@@ -16,7 +17,7 @@ public class Tea extends Drink {
 
     @Override
     public String toString() {
-        return "Tea{ '" + drinkType + '\'' +
+        return "Tea{ '" + drinkName + '\'' +
                 ", price=" + price +
                 '}';
     }

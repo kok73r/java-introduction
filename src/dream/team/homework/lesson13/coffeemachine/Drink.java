@@ -2,13 +2,14 @@ package dream.team.homework.lesson13.coffeemachine;
 
 public class Drink {
 
-    protected String drinkType;
+    protected String drinkName;
     protected int price;
 
 
-    public Drink(int price, String drinkType) {
+    public Drink(int price, String drinkName) {
         this.price = price;
-        this.drinkType = drinkType;
+        this.drinkName = drinkName;
+
     }
 
     public void cooking() {

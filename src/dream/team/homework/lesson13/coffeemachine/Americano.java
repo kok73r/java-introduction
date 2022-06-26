@@ -4,13 +4,14 @@ public class Americano extends Drink {
 
     protected Americano() {
 
-        super(20, "espresso");
+        super(20, "AMERICANO");
 
     }
 
     public void cooking() {
-        System.out.println("Add coffee");
-        System.out.println("Add water");
+        System.out.print("Add coffee, ");
+        System.out.print("add water");
+        System.out.println("- your Americano is ready");
     }
 
     @Override

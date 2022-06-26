@@ -12,7 +12,8 @@ public class Drink {
     }
 
     public void cooking() {
-        System.out.println("Add coffee");
+        System.out.print("Add coffee ");
+        System.out.println("your drink is ready");
     }
 
     public int getPrice() {

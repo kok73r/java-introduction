@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class CoffeeMachineMain {
     public static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
-
 
     public static void main(String[] args) throws IOException {
 
@@ -19,18 +19,12 @@ public class CoffeeMachineMain {
 
     public static ArrayList<Drink> orderDrink() throws IOException {
         ArrayList<Drink> drinks = new ArrayList<>();
-        System.out.println("Enter Buy to make your order");
-        while (READER.readLine().equals("Buy")) {
-            System.out.println("Choose drink: ");
-            System.out.println("Americano");
-            System.out.println("Espresso");
-            System.out.println("Cappuccino");
-            System.out.println("Latte");
-            System.out.println("Tea black");
-            System.out.println("Tea green");
-        }
-        if (createDrink(DrinkType.valueOf(READER.readLine())) != null) {
-            drinks.add(createDrink(DrinkType.valueOf(READER.readLine())));
+        System.out.println("For finish the order input [Finish], to add drink [Continue or anything else]");
+        while (!(READER.readLine().equalsIgnoreCase("finish"))) {
+            System.out.println("Choose drink: \n1)AMERICANO, \n2)ESPRESSO, \n3)CAPPUCCINO, \n4)LATTE, \n5)TEA_BLACK, \n6)TEA_GREEN");
+            DrinkType type = inputType();
+            drinks.add(createDrink(type));
+            System.out.println("For exit input [finish], else anything");
         }
         return drinks;
     }
@@ -43,9 +37,7 @@ public class CoffeeMachineMain {
             case LATTE -> new Latte();
             case TEA_BLACK -> new Tea("BlackTea");
             case TEA_GREEN -> new Tea("GreenTea");
-            default -> throw new IllegalArgumentException();
         };
-
         return drink;
     }
 
@@ -54,14 +46,25 @@ public class CoffeeMachineMain {
             drink.cooking();
         }
     }
+
     public static void totalCheck(ArrayList<Drink> drinks) {
         int sum = 0;
         for (Drink drink : drinks) {
             sum += drink.getPrice();
         }
-        System.out.println("Your check = " + sum);
+        System.out.println("Your total check = " + sum + " grn");
     }
 
+    public static DrinkType inputType() throws IOException {
+        DrinkType type = null;
+        try {
+            type = DrinkType.valueOf(READER.readLine().toUpperCase(Locale.ROOT));
+        } catch (IllegalArgumentException exception) {
+            System.out.println("Invalid input. Try again:");
+            return inputType();
+        }
+        return type;
+    }
 }
 
 

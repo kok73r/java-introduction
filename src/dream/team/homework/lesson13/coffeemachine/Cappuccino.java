@@ -8,8 +8,9 @@ public class Cappuccino extends Drink {
     }
 
     public void cooking() {
-        System.out.println("Add milk");
-        System.out.println("Add coffee");
+        System.out.print("Add milk, ");
+        System.out.print("add coffee ");
+        System.out.println(" - your Cappuccino is ready");
     }
 
     @Override

@@ -8,9 +8,9 @@ public class Latte extends Drink {
     }
 
     public void cooking() {
-        System.out.println("Add milk");
-        System.out.println("Add coffee");
-        System.out.println("Add foam");
+        System.out.print("Add milk, ");
+        System.out.print("add coffee, ");
+        System.out.println("add foam - your Latte is ready");
     }
 
     @Override

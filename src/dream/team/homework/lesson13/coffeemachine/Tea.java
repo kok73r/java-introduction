@@ -9,8 +9,9 @@ public class Tea extends Drink {
     }
 
     public void cooking() {
-        System.out.println("Add water");
-        System.out.println("Add tea");
+        System.out.print("Add water, ");
+        System.out.print("add tea ");
+        System.out.println("- your tea is ready");
     }
 
     @Override

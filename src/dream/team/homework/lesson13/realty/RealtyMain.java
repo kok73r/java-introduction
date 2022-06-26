@@ -1,4 +1,4 @@
-package dream.team.homework.lesson13.taxCalculation;
+package dream.team.homework.lesson13.realty;
 
 import java.util.ArrayList;
 import java.util.List;

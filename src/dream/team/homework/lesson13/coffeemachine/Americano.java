@@ -1,9 +1,10 @@
-package dream.team.homework.lesson13.coffeeMachine;
+package dream.team.homework.lesson13.coffeemachine;
 
 public class Americano extends Drink {
 
     protected Americano() {
-        super(20, "americano");
+
+        super(20, "espresso");
 
     }
 

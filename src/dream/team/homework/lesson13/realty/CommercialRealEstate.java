@@ -1,4 +1,4 @@
-package dream.team.homework.lesson13.taxCalculation;
+package dream.team.homework.lesson13.realty;
 
 public class CommercialRealEstate extends Realty {
 

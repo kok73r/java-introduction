@@ -1,4 +1,4 @@
-package dream.team.homework.lesson13.taxCalculation;
+package dream.team.homework.lesson13.realty;
 
 public class ResidentialRealEstate extends Realty {
     private final int subsidies;
@@ -14,16 +14,13 @@ public class ResidentialRealEstate extends Realty {
         if (totalArea > 50) {
             System.out.print("Tax for flat: ");
             return totalArea * taxK;
-
         }
         if (totalArea < 50) {
             int subsidies = (totalArea * taxK) / 100 * 20;
-
             int tax = (totalArea * taxK) - subsidies;
             System.out.print("You have subsidies, tax for flat: ");
             return tax;
         }
-
         return 0;
     }
 

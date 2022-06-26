@@ -1,4 +1,4 @@
-package dream.team.homework.lesson13.coffeeMachine;
+package dream.team.homework.lesson13.coffeemachine;
 
 public class Cappuccino extends Drink {
 

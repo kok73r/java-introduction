@@ -11,17 +11,15 @@ public class ResidentialRealEstate extends Realty {
 
     public int calculateTax() {
 
-        if (totalArea > 50) {
-            System.out.print("Tax for flat: ");
-            return totalArea * taxK;
-        }
-        if (totalArea < 50) {
-            int subsidies = (totalArea * taxK) / 100 * 20;
-            int tax = (totalArea * taxK) - subsidies;
-            System.out.print("You have subsidies, tax for flat: ");
+        if (totalArea < 70) {
+            int tax = (totalArea * taxK) - (totalArea * taxK) * subsidies / 100;
+            System.out.print("You have subsidies, ");
             return tax;
+        } else {
+            {
+                return super.calculateTax();
+            }
         }
-        return 0;
     }
 
     @Override

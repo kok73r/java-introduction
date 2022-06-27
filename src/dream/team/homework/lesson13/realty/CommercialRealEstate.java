@@ -10,15 +10,11 @@ public class CommercialRealEstate extends Realty {
     }
 
     public int calculateTax() {
-
-        int percentageOfRevenue = revenue / 100 * 20;
         if (revenue < 100) {
             System.out.println("You don`t pay tax, because your proceed is < 100grn.");
             return 0;
         } else {
-            int tax = (totalArea * taxK) + percentageOfRevenue;
-            System.out.print("Tax for shop: ");
-            return tax;
+            return super.calculateTax();
         }
     }
 

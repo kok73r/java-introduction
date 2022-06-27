@@ -6,13 +6,12 @@ import java.util.List;
 public class RealtyMain {
     public static void main(String[] args) {
 
-        int subsidies = 15;
+        int subsidies = 20;
         int revenue = 1500;
         int taxK = 30;
         int totalFlatArea = 52;
         int totalShopArea = 150;
         int totalFactoryArea = 300;
-
 
         Realty resident = new ResidentialRealEstate(totalFlatArea, taxK, subsidies);
         Realty shop = new CommercialRealEstate(totalShopArea, taxK, revenue);
@@ -28,7 +27,7 @@ public class RealtyMain {
 
     public static void showObjectsTax(List<Realty> realEstateObjects) {
         for (Realty realty : realEstateObjects) {
-            System.out.println(realty.calculateTax() + " grn");
+            System.out.println("Your tax = " + realty.calculateTax() + " grn");
         }
     }
 }

@@ -30,7 +30,7 @@ public class CoffeeMachineMain {
     }
 
     public static Drink createDrink(DrinkType type) {
-        Drink drink = switch (type) {
+        return switch (type) {
             case AMERICANO -> new Americano();
             case ESPRESSO -> new Espresso();
             case CAPPUCCINO -> new Cappuccino();
@@ -38,7 +38,6 @@ public class CoffeeMachineMain {
             case BLACK_TEA -> new Tea("Black Tea");
             case GREEN_TEA -> new Tea("Green Tea");
         };
-        return drink;
     }
 
     public static void cooking(ArrayList<Drink> drinks) {
